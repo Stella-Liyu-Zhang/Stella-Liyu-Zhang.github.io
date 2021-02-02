@@ -3,21 +3,7 @@
     padding: 0px;
     box-sizing: border-box;
 }
-:root{
-    --mainColor:rgba(252, 219, 200, 0.808) ;
-    --secondaryColor:rgb(138, 185, 75);
 
-    --borderColor:#8dc785 ;
-
-    --mainText:black;
-    --secondaryText:#c55a9c;
-
-    --themeDotBorder:#412922;
-    --previewBg: rgb(251,249,243,0.8);
-    --previewshadow:rgba(156, 145, 109, 0.8);
-
-    --btnColor: black;
-}
 
 html, body{
     padding: 0;
@@ -26,8 +12,8 @@ html, body{
 }
 
 body{
-font-family: 'Russo One', sans-serif;
-font-weight: 500;
+    font-family: 'Russo One', sans-serif;
+    font-weight: 500;
 }
 button{
     font-family: 'Russo One', sans-serif;
@@ -70,8 +56,6 @@ header{
     margin:auto;
     height:10vh;
     align-items: center;
-
-
 }
 .logo-container{
     flex: 1;
@@ -98,6 +82,7 @@ nav{
     color:#000000;
     font-size: 18px;
     text-decoration: none;
+    
 }
 .love-button{
     border: 5px solid rgb(153, 223, 223);
@@ -117,6 +102,9 @@ nav{
     height: 45px;
     cursor:pointer;
     font-size:15px;
+    text-shadow: #FFF 0px 0px 5px, #FFF 0px 0px 10px, #FFF 0px 0px 15px,
+    rgb(100, 172, 41) 0px 0px 20px, #FF2D95 0px 0px 30px, #FF2D95 0px 0px 40px,
+    #FF2D95 0px 0px 50px, #FF2D95 0px 0px 75px;
 }
 .cart{
     background-color:rgb(153, 223, 223);
@@ -138,19 +126,21 @@ nav{
     margin-top: -40px;
     font-size:44px;
     font-weight:500;
-    background:linear-gradient(to right, #494964, #6f6f89);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color:transparent;
+    text-shadow: #FFF 0px 0px 5px, #FFF 0px 0px 10px, #FFF 0px 0px 15px,
+    rgb(100, 172, 41) 0px 0px 20px, rgb(100, 172, 41) 0px 0px 30px, #FF2D95 0px 0px 40px,
+    #FF2D95 0px 0px 50px, #FF2D95 0px 0px 75px;
+    color: rgb(17, 85, 14);
+    background: #FFFFFF;
 }
 .intro-text p{
     margin-top: 10px;
     font-size: 22px;
-    color:#491e4d;
+    color:rgb(17, 85, 14);
 }
 .intro-text h3{
     margin-top: 15px;
     font-size: 25px;
-    color:#ffa500;
+    color:rgb(100, 172, 41);
     font-family: 'Teko', sans-serif;
     font-weight: 200;
 }
@@ -158,9 +148,10 @@ nav{
 .cta{
     margin-top: 10px;
     padding:500px -100px 0px 50px;
+    
 }
 .cta-linkedin{
-    border: 2px solid yellowgreen;
+    border: 5px solid yellowgreen;
     background:transparent;
     color:rgb(96, 133, 22);
     width: 150px;
@@ -168,18 +159,20 @@ nav{
     font-size:25px;
     font-feature-settings: "aalt";
     cursor:pointer;
+    text-decoration: none;
 
 }
 .cta-github{
+    border: 5px solid yellowgreen;
     background:yellowgreen;
     color:rgb(96, 133, 22);
-    width: 150px;
-    height: 50px;
+    width: 370px;
+    height: 150px;
     cursor:pointer;
     font-size:25px;
     font-feature-settings: "aalt";
-    border:none;
     margin: 20px 20px 30px 30px;
+    text-decoration: none;
 
 }
 .cover{
@@ -242,7 +235,7 @@ nav{
 
 }
 .s2{
-    background-color: var(--secondaryColor);
+    background-color: black;
     border-bottom: 1px solid var(--borderColor);
     overflow:auto;
 }
@@ -270,9 +263,23 @@ nav{
 #skills{
 	display: flex;
 	justify-content: space-evenly;
-	background-color: var(--previewShadow);
+    background-color: var(--previewShadow);
+    
 }
-
+.about-me h4 {
+    margin-top: 15px;
+    font-size: 25px;
+    color:rgb(100, 172, 41);
+    font-family: 'Teko', sans-serif;
+    font-weight: 200;
+}
+.Social-links h3{
+    margin-top: 15px;
+    font-size: 25px;
+    color:rgb(100, 172, 41);
+    font-family: 'Teko', sans-serif;
+    font-weight: 200;
+}
 .social-links{
 	display: grid;
 	align-content: center;
